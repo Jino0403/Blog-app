@@ -1,6 +1,6 @@
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
-import PostList from '../../components/PostLIst';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import PostList from 'components/PostLIst';
 
 export default function PostListPage() {
   return (
