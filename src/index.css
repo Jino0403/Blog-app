@@ -251,14 +251,25 @@ input:checked + .carousel__slide-container .nav label {
   color: gray;
 }
 
+.post__delete {
+  cursor: pointer;
+}
+
 .post__delete:focus,
 .post__delete:hover {
   color: black;
 }
 
 .post__edit:focus,
-.post__edit:hover {
+.post__edit:hover,
+.post__edit a:focus,
+.post__edit a:hover {
   color: black;
+}
+
+.post__edit a {
+  color: gray;
+  text-decoration: none;
 }
 
 /* post-detail */
@@ -334,6 +345,64 @@ input:checked + .carousel__slide-container .nav label {
 .profile__logout:focus,
 .profile__logout:hover {
   color: black;
+}
+
+/* form */
+.form {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.form input {
+  width: 96%;
+  height: 20px;
+  padding: 10px 10px;
+  border-radius: 0.3rem;
+  font-size: 16px;
+  border: 1px solid lightgrey;
+  max-width: 680px;
+}
+
+.form textarea {
+  width: 96%;
+  max-width: 680px;
+  min-height: 400px;
+  padding: 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 0.3rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form .form__block {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form label {
+  display: block;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form .form__btn--submit {
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 6px;
+  background-color: #2563eb;
+  cursor: pointer;
+}
+
+.form__btn--submit:focus,
+.form__btn--submit:hover {
+  background-color: #1945a4;
 }
 
 /* footer */
