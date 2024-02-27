@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Router from './components/Router';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { app } from 'firebaseApp';
+import { app, db } from 'firebaseApp';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from 'components/Loader';
 
 function App() {
   const auth = getAuth(app);
+  console.log(db);
   // auth를 체크하기 전에 (initialize 전)loader를 띄워주는 용도
   const [init, setInit] = useState<boolean>(false);
   // auth의 currentUser가 있으면 authenticated로 변경
