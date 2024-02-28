@@ -310,6 +310,10 @@ input:checked + .carousel__slide-container .nav label {
   padding: 20px 0;
 }
 
+.post__text--pre-wrap {
+  white-space: pre-wrap;
+}
+
 /* profile */
 .profile__box {
   max-width: 680px;
